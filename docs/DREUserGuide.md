@@ -1,7 +1,4 @@
 <<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
 # Data Rods Explorer 1.0.0  ![](figs/app-icon-balloon.png) 
 
 _Browse NASA data services for land surface model maps and time series_
@@ -202,7 +199,7 @@ _You can add more layers to the map by selecting them in the Product-Model &amp;
 
 _**Demo Step 9:**_ **With the year-on-year comparison still in the time series graph, click &quot;View Raw Data from NASA in New Tab…&quot; button below the map frame. Pick ASCII, Plot, or NetCDF** , _to see DRE open new tabs for each time series graph currently plotted_. **Click on the &quot;layer cake&quot; icon in upper-right of the plot frame**. _This shows the downloadable image and tabular formats. These latter outputs will not provide much, if any, metadata. Best to use View Raw Data &gt; ASCII or NetCDF if you need the metadata. If you only see one new tab open instead of one for each time series plot, you may need to add apps.hydroshare.org as an exception to your browser&#39;s Popup Blocker._
 
-_**Demo Step 10:**_ _If you don&#39;t have a user account on HydroShare.org, you must create one before completing this step._ **With any plot in the graph display, click on &quot;Upload to HydroShare&quot; button above the graph. Select either ASCII or NetCDF**. _You will see a popup dialog for HydroShare, for entering a title, abstract, and keywords. The abstract and keywords are already started for you, but the title is left blank. You can finish editing this resource description here, or later in HydroShare._ **Click &quot;Upload&quot; if you have a HydroShare account, or &quot;Close&quot; to cancel the request** _. An informative message &quot;Creating HydroShare resource…&quot; will appear above the map frame, replaced by a later message &quot;The HydroShare resource was created successfully! View it **here**&quot; if all is well. Clicking the &quot;**here**&quot; link will take you to the new resource created in HydroShare. If your plot was for multiple variables or years being compared, they will all be included as a single resource in HydroShare. The default filename assigned to each file identifies the model, variable, and lon-lat coordinates of the time series._
+_**Demo Step 10:**_ **With any plot in the graph display, click on &quot;Upload to HydroShare&quot; button above the graph. Select either ASCII or NetCDF**. _You will see a popup dialog for HydroShare, for entering a title, abstract, and keywords. The abstract and keywords are already started for you, but the title is left blank. You can finish editing this resource description here, or later in HydroShare._ **Click &quot;Upload&quot;, or &quot;Close&quot; to cancel the request** _. An informative message &quot;Creating HydroShare resource…&quot; will appear above the map frame, replaced by a later message &quot;The HydroShare resource was created successfully! View it **here**&quot; if all is well. Clicking the &quot;**here**&quot; link will take you to the new resource created in HydroShare. If your plot was for multiple variables or years being compared, they will all be included as a single resource in HydroShare. The default filename assigned to each file identifies the model, variable, and lon-lat coordinates of the time series._
 
 ---
 
@@ -373,7 +370,7 @@ One other point to make regarding the View Raw Data choices: if your plots have 
 
 ### <a name="upload"></a>Uploading time series query results to HydroShare
 
-[HydroShare](https://www.hydroshare.org/) allows users to create, manage, and publish data resources of many types. DRE enables users to upload the results of a time series query (**plot one variable**, **compare two variables**, **year-on-year changes**) to the user&#39;s account on HydroShare. These time series results can be uploaded in either of two formats: ASCII (tabular text) or NetCDF.
+[HydroShare](https://www.hydroshare.org/) allows users to create, manage, and publish data resources of many types. DRE enables users to upload the results of a time series query (**plot one variable**, **compare two variables**, **year-on-year changes**) to the user&#39;s account on HydroShare (**note:** you must be logged into HydroShare while doing this). These time series results can be uploaded in either of two formats: ASCII (tabular text) or NetCDF.
 
  ![Figure 17](figs/fig17.png)
 <a name="fig17"></a>_Figure 17. Choices for Uploading Time Series Data to HydroShare_ 
@@ -393,10 +390,12 @@ After you click the **Upload** button, you should see these two informative mess
 
 <a name="fig19"></a>_Figure 19. HydroShare Upload Progress Messages_
 
-Clicking on the &quot;**here**&quot; link in the second message above will open the HydroShare Resource Details. DRE assigns default filenames for uploaded time series, with the following information template: _model\_version\_variablename\_LongitudeLatitude_, with filename extensions of _.nc_ for NetCDF, and _.txt_ for ASCII. This is similar to NASA&#39;s filename template for downloaded ASCII and NetCDF data.
+Clicking on the &quot;**here**&quot; link in the second message above will open the HydroShare Resource Details. DRE assigns default filenames for uploaded time series, with the following information template: _model\_version\_variablename\_LongitudeLatitude_, with filename extensions of _.nc_ for NetCDF, and _.txt_ for ASCII. This is similar to NASA&#39;s filename template for downloaded ASCII and NetCDF data.  
 
- ![Figure 20](figs/fig20.png)
+ ![Figure 20](figs/fig20.png)  
 <a name="fig20"></a>_Figure 20. Excerpt from HydroShare Resource Details for Uploaded Time Series_
+
+**Note the longitude value in this example of -100E.** This is the same as 100 degrees west of the Prime Meridian, or what is typically written just &quot;-100&quot;. We chose this way to express west-longitude for simplicity of use within the DRE program.
 
 Do not download a time series result just to upload it to HydroShare. Once it is in the graph frame, it&#39;s ready to upload. **Note**: DRE does not enable upload of the model-variable maps.
 
@@ -424,11 +423,13 @@ When GLDAS is selected as the model, the Display Map button is disabled (grayed 
 
  ![Message 3](figs/msg03.png)
 
-**Message 4.** Two informative messages accompany requests for data upload to HydroShare:
+**Message 4.** Two informative messages and one warning might accompany requests for data upload to HydroShare:
 
  ![Message 4a](figs/msg04a.png)
 
  ![Message 4b](figs/msg04b.png)
+ 
+ ![Message 4c](figs/msg04c.png)
 
 **Message 5.** Error messages are displayed in brown text and background box, as shown below. The following message appears if the requested map service is down, or if a map is requested out of temporal or spatial bounds.
  ![Message 5](figs/msg05.png)
@@ -1732,5 +1733,4 @@ _This content is intended for the HydroShare apps registry._
 **App icons** :   ![logo-sm](figs/app-icon-sm.png) ![logo-balloon](figs/app-icon-balloon.png)  ![logo-lg](figs/app-icon-lg.png)
 
 ---
->>>>>>> origin/master
 >>>>>>> origin/master
